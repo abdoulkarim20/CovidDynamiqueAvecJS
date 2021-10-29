@@ -1,0 +1,27 @@
+body{
+    background-color: forestgreen;
+}
+
+#intro{
+    text-align: center;
+    color: floralwhite;
+}
+.username-div{
+    margin: auto;
+}
+.div-question{
+    display: flex;
+    background: chocolate;
+    flex-direction: column;
+}
+.div-question #btn-btn-suivant{
+    width: 70px;
+    margin: 0 0 10px 10px;
+    border: cyan solid;
+    border-radius: 10px;
+    text-align: right;
+}
+.div-input{
+    display: flex;
+    flex-direction: row;
+}

@@ -20,7 +20,7 @@ validerTest.addEventListener("click",()=>{
             }  
         }   
     }
-    for(i=0; i<fievre.length; i++){
+    for(i=0; i<fievre.length; i++){ 
         if(fievre[i].checked===true){
             Lafievre=fievre[i].value ;
             if(Lafievre==="Oui"){
@@ -67,7 +67,8 @@ validerTest.addEventListener("click",()=>{
     document.querySelector("#latemperature").innerHTML=localStorage.getItem("temperature");
 
     if(cptnm>cptm && cptcg==0){
-        alert("Vous ne representer aucun signe de covid");
+        this.StyleSheet.color='orange';
+        // alert("Vous ne representer aucun signe de covid");
     }else if(cptm>cptnm && cptcg==0){
         alert("Vous devez vous rendre dans un hopital le plus proche pour vous depister du covid vous avez les signe majeurs de covid");
     }else{

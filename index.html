@@ -8,72 +8,94 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- Ici main du projet -->
+    <div class="main">
+         <!-- Ici la div de la connexion  -->
+        <div class="div-connexion">
+            <section class="connexion">
+                <!-- Diallo connexion orange (html/css)-->
+                    <h1 class="title-connexion">Recapitulatif sur votre test COVID-19</h1>
+            </section>
+        </div>
+            <!-- Ici prend fin div de la connexion -->
+         <!-- Ici commence le bloc photo et santer resultat et bloc de resultat -->
+            <div class="content">
+                <!-- Ici bloc du photo -->
+                <div class="div-form">
+                    <form action=""></form>
+                        <div>
+                            <label for="">votre nom</label>
+                            <input type="text" name="nom" id="nom">
+                        </div>
+                        <div>
+                            <label for="">votre prenoms</label>
+                            <input type="text" name="prenom" id="prenom">
+                        </div>
+                        <label for="">votre corps est chauds</label>
+                        <div>
+                            <input type="radio" name="corpschaud" id="corpschaudOui" value="Oui">
+                            <label for="">Oui</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="corpschaud" id="corpschaudNon" value="Non">
+                            <label for="">Non</label>
+                        </div>
+                        <label for="">Avez vous de la fievre</label>
+                        <div>
+                            <input type="radio" name="fievre" id="fievreOui" value="Oui">
+                            <label for="">Oui</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="fievre" id="fievreNon" value="Non">
+                            <label for="">Non</label>
+                        </div>
+                        <label for="">Quelle etait votre temperature il ya deux jours  est-elle inferieure a 37 , egale a 37 superieure a ou egale a 38 ?</label>
+                        <div>
+                            <input type="radio" name="temperature" id="inferieure" value="inferieure">
+                            <label for="">inferieure a 37</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="temperature" id="normale" value="normale">
+                            <label for="">egale a 37</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="temperature" id="anormale" value="anormale">
+                            <label for="">superieure ou egale 38</label>
+                        </div>
+                    </form>
+                    <button>Valider votre test</button>
+                </div>   
+                <!-- Fin bloc  -->
+                
+                <!-- Ici Recapitulatif -->
+                <div class="recapitulatif">
+                    <div>
+                        <h1>Recapitulatif de votre test</h1>
+                    </div>
+                
+                    <div>
+                        <label for="">votre nom est:<span id="lenom"></span></label>
+                    </div>
+                    <div>
+                        <label for="">votre prenoms est:<span id="leprenom"></span></label>
+                    </div>
+                    <div>
+                        <label for="">votre corps chauffe-t-il? :<span id="lecorpschaud"></span></label>
+                    </div>
+                    <div>
+                        <label for="">avez vous de la fievre:<span id="lafievre"></span></label>
+                    </div>
+                    <div>
+                        <label for="">Votre temperature est:<span id="latemperature"></span></label>
+                    </div>
 
-    <form action="">
-        <div>
-            <div>
-                <label for="">votre nom</label>
-                <input type="text" name="nom" id="nom">
+                </div>
+                <!-- Fin Recapitulatif -->
             </div>
-            <div>
-                <label for="">votre prenoms</label>
-                <input type="text" name="prenom" id="prenom">
-            </div>
-            <label for="">votre corps est chauds</label>
-            <div>
-                <input type="radio" name="corpschaud" id="corpschaudOui" value="Oui">
-                <label for="">Oui</label>
-            </div>
-            <div>
-                <input type="radio" name="corpschaud" id="corpschaudNon" value="Non">
-                <label for="">Non</label>
-            </div>
-            <label for="">Avez vous de la fievre</label>
-            <div>
-                <input type="radio" name="fievre" id="fievreOui" value="Oui">
-                <label for="">Oui</label>
-            </div>
-            <div>
-                <input type="radio" name="fievre" id="fievreNon" value="Non">
-                <label for="">Non</label>
-            </div>
-            <label for="">Quelle etait votre temperature il ya deux jours  est-elle inferieure a 37 , egale a 37 superieure a ou egale a 38 ?</label>
-            <div>
-                <input type="radio" name="temperature" id="inferieure" value="inferieure">
-                <label for="">inferieure a 37</label>
-            </div>
-            <div>
-                <input type="radio" name="temperature" id="normale" value="normale">
-                <label for="">egale a 37</label>
-            </div>
-            <div>
-                <input type="radio" name="temperature" id="anormale" value="anormale">
-                <label for="">superieure ou egale 38</label>
-            </div>
-        </div>    
-    </form>
-    <button>Valider votre test</button>
-    <div>
-        <h1>Recapitulatif de votre test</h1>
-    </div>
+    <!-- Ici prend fin du bloc photo et bloc resultat -->
 
-    <div>
-        <label for="">votre nom est:<span id="lenom"></span></label>
     </div>
-    <div>
-        <label for="">votre prenoms est:<span id="leprenom"></span></label>
-    </div>
-    <div>
-        <label for="">votre corps chauffe-t-il? :<span id="lecorpschaud"></span></label>
-    </div>
-    <div>
-        <label for="">avez vous de la fievre:<span id="lafievre"></span></label>
-    </div>
-    <div>
-        <label for="">Votre temperature est:<span id="latemperature"></span></label>
-    </div>
-   
-    
+    <!-- Ici prend fin du main -->
 
     <script src="app.js">
 
